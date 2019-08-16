@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jenkins_web:
+    image: ${DOCKER_REGISTRY-}jenkinsweb
+    build:
+      context: .
+      dockerfile: Jenkins_Web/Dockerfile
